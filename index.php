@@ -88,7 +88,8 @@ array(3) {  //Three Items
 */
 
 
-//Loop through the array keys and assign them as values to $name 
+//Array keys creates new array wich previous arrays keys as values
+//Foreach assigns each value to the $name variable
 foreach (array_keys($names) as $name){
     echo "Hello, $name <br />";
 }
