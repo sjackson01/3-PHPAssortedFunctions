@@ -47,7 +47,7 @@ $str = 'abc';
 echo strlen($str);
 /*
 
-/* PHP String Functions */
+/* !PHP String Functions! */
 
 /*
 //Use strlen function
@@ -66,5 +66,40 @@ $start = strpos($phrase, 'hit');
 //echo string starting at position 8 from strpos 
 echo substr($phrase, $start);
 */
+
+/* !Array Functions! */
+
+//Create array
+$names = array(
+    //Key     //Value 
+    'Mike' => 'Frog',
+    'Chris' => 'Teacher',
+    'Hampton' => 'Teacher',
+);
+
+var_dump(array_keys($names));
+/*
+Output 
+array(3) {  //Three Items
+    [0]=> string(4) "Mike" //Key of $name as value of new array 
+    [1]=> string(5) "Chris" //Key of $name as value of new array 
+    [2]=> string(7) "Hampton" //Key of $name as value of new array 
+}
+*/
+
+
+//Loop through the array keys and assign them as values to $name 
+foreach (array_keys($names) as $name){
+    echo "Hello, $name <br />";
+}
+
+
+//Create function to "walk through" with $value and $key arguments
+function print_info($value, $key){
+    echo "$key is a $value <br />";
+}
+
+//Pass in array and string verions of function name 
+array_walk($names, 'print_info')
 
 ?>
