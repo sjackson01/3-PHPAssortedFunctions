@@ -26,6 +26,7 @@ echo $funct(2,2);
 
 /* !Anonymous Functions! */
 
+/*
 $name = 'Mike';
 
 //Use a variable outside of the function scope inside of the function
@@ -34,5 +35,17 @@ $greet = function() use($name){
 };
 
 $greet();
+*/
+
+/* !PHP DOCS! */
+
+//String length example
+//PHP Docs: strlen( string $string) :int
+
+$str = 'abc';
+
+echo strlen($str);
+
+
 
 ?>
