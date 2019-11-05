@@ -49,6 +49,7 @@ echo strlen($str);
 
 /* PHP String Functions */
 
+/*
 //Use strlen function
 $phrase = "We only hit what we aim for";
 
@@ -64,6 +65,6 @@ $len = strlen($phrase);
 $start = strpos($phrase, 'hit');
 //echo string starting at position 8 from strpos 
 echo substr($phrase, $start);
-
+*/
 
 ?>
